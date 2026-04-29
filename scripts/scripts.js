@@ -13,29 +13,6 @@ import {
   loadCSS,
 } from './aem.js';
 
-import initAccessibilityMode from '../tools/sidekick/plugins/accessibility-mode/accessibility-mode.js';
-
-let isA11yModeActive = false;
-
-const toggleA11y = async () => {
-  isA11yModeActive = !isA11yModeActive;
-  document.body.classList.toggle('accessibility-mode-active', isA11yModeActive);
-  await initAccessibilityMode(isA11yModeActive);
-};
-
-const bindSidekick = () => {
-  const sk =
-    document.querySelector('aem-sidekick') ||
-    document.querySelector('helix-sidekick');
-
-  if (sk) {
-    sk.addEventListener('custom:accessibility-mode', toggleA11y);
-  }
-};
-
-bindSidekick();
-document.addEventListener('sidekick-ready', bindSidekick, { once: true });
-
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
