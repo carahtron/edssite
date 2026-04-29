@@ -20,8 +20,9 @@
     {
       "id": "accessibility-mode",
       "title": "Accessibility",
-      "environments": [ "preview", "live", "dev" ],
+      "environments": [ "preview", "live" ],
       "event": "accessibility-mode"
+      "pinned": true
     },
     {
       "id": "generate-variations",
