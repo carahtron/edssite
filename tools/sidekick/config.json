@@ -1,6 +1,11 @@
 {
   "project": "EDSSite",
-  "plugins": [
+  "plugins": [  
+    {
+      "sidekick": {
+        "useConfigService": false
+      }
+    },
     {
       "id": "library",
       "title": "Library",
