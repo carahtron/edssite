@@ -21,7 +21,8 @@
       "id": "accessibility-mode",
       "title": "Accessibility",
       "environments": [ "preview", "live" ],
-      "event": "accessibility-mode"
+      "event": "accessibility-mode",
+      "icon": "accessibility",
       "pinned": true
     }
   ]
