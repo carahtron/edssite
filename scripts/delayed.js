@@ -1,5 +1,3 @@
-// add delayed functionality here
-
 // eslint-disable-next-line import/no-cycle
 import { fetchPlaceholders, sampleRUM } from './lib-franklin.js';
 import loadCookieConsent from './cookie-consent/lib-cookie-consent.js';
