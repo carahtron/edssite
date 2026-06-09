@@ -1,0 +1,39 @@
+{
+  "variantName": "embed-social",
+  "baseBlock": "embed",
+  "version": "1.0.0",
+  "created": "2026-06-03T21:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unumgroup.com/",
+    "originPage": "corporate homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "social-feed",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "embedded social media feed URL",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "social media feed embeds",
+      "third-party social aggregator widgets",
+      "Twitter/Instagram/LinkedIn feed displays"
+    ],
+    "notSuitableFor": [
+      "video embeds (use embed-video)",
+      "YouTube content",
+      "custom iframe content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-03T21:10:00.000Z"
+  }
+}

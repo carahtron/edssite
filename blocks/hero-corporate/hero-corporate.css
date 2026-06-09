@@ -1,0 +1,96 @@
+/* Block: hero-corporate
+   Source: unumgroup.com hero with full-width image and overlay text bar */
+
+/* Full-width wrapper override */
+.hero-corporate-wrapper {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* Section override - remove default section padding */
+.hero-corporate-container {
+  padding: 0 !important;
+}
+
+.hero-corporate {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+/* Row 1: Background image - absolute positioned to fill block */
+.hero-corporate > div:first-child {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  line-height: 0;
+}
+
+.hero-corporate > div:first-child img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Row 2: Text overlay bar - positioned at bottom over image */
+.hero-corporate > div:last-child {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  min-height: 300px;
+  padding: 0;
+}
+
+.hero-corporate > div:last-child > div {
+  width: 100%;
+  background-color: rgb(38 73 95 / 90%);
+  padding: 25px 39px;
+  text-align: center;
+}
+
+/* Heading styling */
+.hero-corporate h1 {
+  font-size: var(--heading-font-size-xl);
+  font-weight: 100;
+  font-family: var(--body-font-family);
+  line-height: 1.25;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+.hero-corporate h1 sup {
+  font-size: 0.5em;
+}
+
+/* Headings, paragraphs in hero all white */
+.hero-corporate h2,
+.hero-corporate h3,
+.hero-corporate h4,
+.hero-corporate h5,
+.hero-corporate h6,
+.hero-corporate p {
+  color: #fff;
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .hero-corporate {
+    min-height: 500px;
+  }
+
+  .hero-corporate > div:last-child {
+    min-height: 500px;
+  }
+
+  .hero-corporate h1 {
+    font-size: var(--heading-font-size-xl);
+    font-weight: 100;
+    line-height: 39px;
+  }
+}

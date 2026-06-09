@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://www.unumgroup.com/"],
+      "description": "Unum Group corporate homepage with hero, awards carousel, news cards, social media links, and embedded social feed",
+      "blocks": [
+        {
+          "name": "hero-corporate",
+          "instances": [".hero_image"]
+        },
+        {
+          "name": "carousel-awards",
+          "instances": [".award_slider_container"]
+        },
+        {
+          "name": "cards-news",
+          "instances": [".large_news_block", ".small_block_container"]
+        },
+        {
+          "name": "columns-social",
+          "instances": [".social_media_block"]
+        },
+        {
+          "name": "embed-social",
+          "instances": [".ig_slider"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-hero",
+          "name": "Hero",
+          "selector": ".hero_image",
+          "style": "dark",
+          "blocks": ["hero-corporate"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-mission",
+          "name": "Mission Statement",
+          "selector": ".hero_info",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [".hero_info .col-lg-10"]
+        },
+        {
+          "id": "section-awards",
+          "name": "Awards & Recognition",
+          "selector": [".awards_text", ".award_slider_container"],
+          "style": null,
+          "blocks": ["carousel-awards"],
+          "defaultContent": [".awards_text h2", ".awards_text p"]
+        },
+        {
+          "id": "section-news",
+          "name": "News & Stories",
+          "selector": ".newsfeed",
+          "style": null,
+          "blocks": ["cards-news"],
+          "defaultContent": [".newsfeed h2", ".newsroom-action-link"]
+        },
+        {
+          "id": "section-social",
+          "name": "Stay Connected",
+          "selector": ".social_media_block",
+          "style": "light-grey",
+          "blocks": ["columns-social", "embed-social"],
+          "defaultContent": [".social_media_block h2"]
+        }
+      ]
+    }
+  ]
+}

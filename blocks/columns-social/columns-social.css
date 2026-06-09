@@ -1,0 +1,80 @@
+/* Block: columns-social -- social media brand columns */
+
+.columns-social {
+  color: var(--text-color);
+  text-align: center;
+  padding: 0;
+}
+
+/* Row layout - stack on mobile, side by side on desktop */
+.columns-social > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 24.65px;
+}
+
+/* Each brand column */
+.columns-social > div > div {
+  text-align: center;
+  padding: 0 15.6px 24.65px;
+}
+
+/* Brand logo images - constrain width */
+.columns-social > div > div > p:first-child img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+/* Paragraphs containing social links */
+.columns-social p {
+  margin: 4px 0;
+  font-size: 17.68px;
+  line-height: 26.52px;
+}
+
+/* Social links styling */
+.columns-social a:any-link {
+  color: var(--text-color);
+  font-size: 17.68px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.columns-social a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Follow Us CTA - last link in each column */
+.columns-social > div > div > p:last-child a:any-link {
+  display: inline-block;
+  background-color: rgb(49 128 64);
+  color: rgb(255 255 255);
+  font-size: 17.68px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 12px;
+}
+
+.columns-social > div > div > p:last-child a:hover {
+  background-color: rgb(39 108 54);
+  color: rgb(255 255 255);
+  text-decoration: none;
+}
+
+/* Desktop layout - two columns side by side */
+@media (width >= 900px) {
+  .columns-social > div {
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .columns-social > div > div {
+    flex: 1;
+    max-width: 50%;
+  }
+}

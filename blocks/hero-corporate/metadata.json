@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-corporate",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-03T21:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unumgroup.com/",
+    "originPage": "corporate homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "corporate-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "background image + tagline text",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "corporate homepages",
+      "brand landing pages",
+      "pages with full-width hero image and overlay text"
+    ],
+    "notSuitableFor": [
+      "product detail pages",
+      "blog posts",
+      "pages needing CTA buttons in hero"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-03T21:10:00.000Z"
+  }
+}

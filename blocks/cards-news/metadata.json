@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-news",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-03T21:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unumgroup.com/",
+    "originPage": "corporate homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "news-articles",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + category + date + title + description + CTA link",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "news article listings",
+      "blog post grids",
+      "press release summaries",
+      "newsroom pages"
+    ],
+    "notSuitableFor": [
+      "product feature cards",
+      "team member profiles",
+      "icon-based feature lists"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-03T21:10:00.000Z"
+  }
+}

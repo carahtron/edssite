@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-awards",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-06-03T21:10:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.unumgroup.com/",
+    "originPage": "corporate homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "awards-showcase",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "sliding gallery of award/certification logos",
+    "buttonCount": 0,
+    "imageCount": 15
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "award and certification showcases",
+      "partner logo galleries",
+      "client logo carousels"
+    ],
+    "notSuitableFor": [
+      "content-heavy carousels with text",
+      "hero-style image sliders",
+      "product image galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-03T21:10:00.000Z"
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --heading-font-family: "Open Sans", sans-serif;
+  --body-font-family: "Open Sans", sans-serif;
+  --background-color: #fff;
+  --text-color: #212529;
+  --link-color: #0d6efd;
+  --link-hover-color: #0a58ca;
+  --section-padding: 40px;
+  --nav-height: 100px;
+  --content-max-width: 1200px;
+  --heading-size-xxl: 36px;
+  --heading-size-xl: 31.2px;
+  --heading-size-l: 26px;
+  --heading-size-m: 18.2px;
+  --heading-size-s: 18px;
+  --heading-size-xs: 16px;
+  --color-dark: #1b3a5c;
+  --color-light: #f8f9fa;
+}
