@@ -1,0 +1,118 @@
+/* Teaser block — featured article matching unumgroup.com News & Stories hero card */
+
+.teaser.block {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: rgb(0 68 112 / 30%) 0 5px 10px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.teaser.teaser-linked {
+  cursor: pointer;
+}
+
+/* Image side */
+.teaser .teaser-image {
+  line-height: 0;
+}
+
+.teaser .teaser-image img,
+.teaser .teaser-image picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Content side — dark blue panel */
+.teaser .teaser-content {
+  background-color: rgb(38 73 95);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+/* Description — base paragraph (overridden by category/date below) */
+.teaser .teaser-content > p {
+  font-size: 17.68px;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+/* Category — first paragraph */
+.teaser .teaser-content > p:first-child {
+  font-size: 17.68px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Green divider after category */
+.teaser .teaser-content > p:first-child::after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 5px;
+  background-color: rgb(140 195 66);
+  margin: 10px 0;
+}
+
+/* Date — second paragraph */
+.teaser .teaser-content > p:nth-child(2) {
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+/* Title */
+.teaser .teaser-content h1,
+.teaser .teaser-content h2,
+.teaser .teaser-content h3,
+.teaser .teaser-content h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(241 243 245);
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+
+/* CTA link */
+.teaser .teaser-content a {
+  font-size: 17.68px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.teaser .teaser-content a::after {
+  content: "\00a0\203A";
+}
+
+.teaser .teaser-content a:hover {
+  text-decoration: underline;
+}
+
+/* Desktop: image left (~66%), content right (~34%) */
+@media (width >= 900px) {
+  .teaser.block {
+    flex-direction: row;
+  }
+
+  .teaser .teaser-image {
+    flex: 0 0 66%;
+    max-width: 66%;
+  }
+
+  .teaser .teaser-content {
+    flex: 1;
+    padding: 24px;
+  }
+}
