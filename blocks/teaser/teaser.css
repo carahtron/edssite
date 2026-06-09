@@ -16,6 +16,7 @@
 /* Image side */
 .teaser .teaser-image {
   line-height: 0;
+  overflow: hidden;
 }
 
 .teaser .teaser-image picture {
@@ -42,25 +43,20 @@
   padding: 24px 16px;
 }
 
-/* Description — base paragraph (overridden by category/date below) */
-.teaser .teaser-content > p {
-  font-size: 17.68px;
-  color: #fff;
-  line-height: 1.2;
-  margin: 0 0 12px;
+.teaser .teaser-content > * {
+  margin: 0;
 }
 
-/* Category — first paragraph */
-.teaser .teaser-content > p:first-child {
+/* Eyebrow / category */
+.teaser .teaser-eyebrow {
   font-size: 17.68px;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
-  margin: 0;
 }
 
-/* Green divider after category */
-.teaser .teaser-content > p:first-child::after {
+/* Green divider under the eyebrow */
+.teaser .teaser-eyebrow::after {
   content: "";
   display: block;
   width: 20%;
@@ -69,8 +65,8 @@
   margin: 10px 0;
 }
 
-/* Date — second paragraph */
-.teaser .teaser-content > p:nth-child(2) {
+/* Date */
+.teaser .teaser-date {
   font-size: 13px;
   font-weight: 400;
   color: #fff;
@@ -78,10 +74,7 @@
 }
 
 /* Title */
-.teaser .teaser-content h1,
-.teaser .teaser-content h2,
-.teaser .teaser-content h3,
-.teaser .teaser-content h4 {
+.teaser .teaser-title {
   font-size: 24px;
   font-weight: 700;
   color: rgb(241 243 245);
@@ -89,13 +82,24 @@
   margin: 0 0 10px;
 }
 
+/* Description */
+.teaser .teaser-desc {
+  font-size: 17.68px;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
 /* CTA link */
+.teaser .teaser-cta {
+  margin-top: auto;
+}
+
 .teaser .teaser-content a {
   font-size: 17.68px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
-  margin-top: auto;
 }
 
 .teaser .teaser-content a::after {
