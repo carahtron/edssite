@@ -77,7 +77,7 @@ const base64 = await page.evaluate(async (url) => {
       const WI = window.WebImporter;
 
       // Known EDS block class names in this project.
-      const BLOCK_CLASSES = ['hero-corporate', 'carousel-awards', 'cards-news', 'columns-social', 'embed-social'];
+      const BLOCK_CLASSES = ['hero-corporate', 'carousel-awards', 'teaser', 'cards-news', 'columns-social', 'embed-social'];
 
       // Convert each block div into an EDS block table:
       //   row 1 = block name, following rows = the block's existing row divs (cells = inner divs).

@@ -10,8 +10,15 @@ export default function decorate(block) {
     imageRow.className = 'teaser-image';
     const img = imageRow.querySelector('img');
     if (img) {
-      const optimized = createOptimizedPicture(img.src, img.alt, false, [{ width: '1000' }]);
-      img.closest('picture')?.replaceWith(optimized);
+      // EDS image optimization only works for media-bus images on the same origin.
+      // For external/cross-origin sources, leave the original <picture> untouched.
+      const sameOrigin = img.src.startsWith('/')
+        || img.src.startsWith(window.location.origin)
+        || img.src.startsWith('./');
+      if (sameOrigin) {
+        const optimized = createOptimizedPicture(img.src, img.alt, false, [{ width: '1000' }]);
+        img.closest('picture')?.replaceWith(optimized);
+      }
     }
   }
 
